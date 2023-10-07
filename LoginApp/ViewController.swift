@@ -22,6 +22,12 @@ class ViewController: UIViewController {
         
     }
 
-
+    @IBAction func loginButtonPressed() {
+    }
+    @IBAction func forgotNameButtonAction() {
+    }
+    @IBAction func forgotPasswordButtonAction() {
+    }
+    
 }
 
