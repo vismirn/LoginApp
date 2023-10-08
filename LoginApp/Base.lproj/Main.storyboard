@@ -123,11 +123,11 @@
                                     </label>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FdU-CG-Hif">
-                                <rect key="frame" x="149" y="461" width="78" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Logout"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FdU-CG-Hif">
+                                <rect key="frame" x="134" y="480" width="107.5" height="44"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Log out">
+                                    <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="25"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <action selector="logoutButtonAction" destination="rfv-DG-gFu" eventType="touchUpInside" id="URU-Li-08i"/>
                                     <segue destination="jPp-BP-dmx" kind="unwind" unwindAction="unwindFor:" id="I1k-zy-Yee"/>
@@ -135,12 +135,14 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Ivn-VI-J3e"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.35946982864246768" green="0.80137060582508379" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="fUA-wX-d69" firstAttribute="leading" secondItem="Ivn-VI-J3e" secondAttribute="leading" constant="154" id="4hm-zU-208"/>
+                            <constraint firstItem="fUA-wX-d69" firstAttribute="leading" relation="lessThanOrEqual" secondItem="Ivn-VI-J3e" secondAttribute="leading" constant="154" id="4hm-zU-208"/>
                             <constraint firstItem="fUA-wX-d69" firstAttribute="top" secondItem="Ivn-VI-J3e" secondAttribute="top" constant="132" id="BAR-jM-Y4n"/>
-                            <constraint firstItem="Ivn-VI-J3e" firstAttribute="trailing" secondItem="fUA-wX-d69" secondAttribute="trailing" constant="154" id="FqM-lK-Acr"/>
+                            <constraint firstItem="Ivn-VI-J3e" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="fUA-wX-d69" secondAttribute="trailing" constant="154" id="FqM-lK-Acr"/>
+                            <constraint firstItem="Ivn-VI-J3e" firstAttribute="bottom" secondItem="FdU-CG-Hif" secondAttribute="bottom" constant="143" id="Pko-p9-cel"/>
                             <constraint firstItem="fUA-wX-d69" firstAttribute="centerX" secondItem="zdq-nO-1Oe" secondAttribute="centerX" id="g6G-Mr-x7z"/>
+                            <constraint firstItem="FdU-CG-Hif" firstAttribute="centerX" secondItem="Ivn-VI-J3e" secondAttribute="centerX" id="zgp-Ka-zRo"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="PxB-hN-grh"/>
@@ -159,9 +161,6 @@
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="systemGray3Color">
             <color red="0.78039215689999997" green="0.78039215689999997" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
