@@ -20,19 +20,18 @@ final class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        var usernameTextField = usernameTextField.text
-//        let passwordTextField = passwordTextField.text
         
     }
-
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let loginVC = segue.destination as? LoginViewController else { return }
+        loginVC.userHello = usernameTextField.text
+    }
+    
     @IBAction func loginButtonPressed()  {
         
     }
     
-    @IBAction func prepare(for segue: UIStoryboardSegue) {
-        guard let loginVC = segue.destination as? LoginViewController else { return }
-        loginVC.userHelloLabel.text = usernameTextField.text
-    }
     
     @IBAction func forgotNameButtonAction() {
         let alertController = UIAlertController(title: "Ваше имя Viktor", message: "_", preferredStyle: .alert)

@@ -12,9 +12,11 @@ final class LoginViewController: UIViewController {
     @IBOutlet weak var userHelloLabel: UILabel!
     @IBOutlet weak var logoutButton: UIButton!
     
+    var userHello: String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        userHelloLabel.text = userHello
 
     }
     
