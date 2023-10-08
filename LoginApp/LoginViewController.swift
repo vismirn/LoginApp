@@ -11,13 +11,15 @@ final class LoginViewController: UIViewController {
 
     @IBOutlet weak var userHelloLabel: UILabel!
     @IBOutlet weak var logoutButton: UIButton!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
     }
     
     @IBAction func logoutButtonAction() {
-        dismiss(animated: true)
+        
     }
     
 }

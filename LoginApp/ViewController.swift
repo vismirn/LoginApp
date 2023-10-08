@@ -17,14 +17,23 @@ final class ViewController: UIViewController {
     @IBOutlet weak var forgotUsernameButton: UIButton!
     @IBOutlet weak var forgotPasswordButton: UIButton!
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+//        var usernameTextField = usernameTextField.text
+//        let passwordTextField = passwordTextField.text
         
     }
 
-    @IBAction func loginButtonPressed() {
+    @IBAction func loginButtonPressed()  {
+        
     }
+    
+    @IBAction func prepare(for segue: UIStoryboardSegue) {
+        guard let loginVC = segue.destination as? LoginViewController else { return }
+        loginVC.userHelloLabel.text = usernameTextField.text
+    }
+    
     @IBAction func forgotNameButtonAction() {
         let alertController = UIAlertController(title: "Ваше имя Viktor", message: "_", preferredStyle: .alert)
         let alertAction = UIAlertAction(title: "OK", style: .default)
@@ -38,5 +47,9 @@ final class ViewController: UIViewController {
         present(alertController, animated: true, completion: nil)
     }
     
+    
+    
+    @IBAction func unwind(for segue: UIStoryboardSegue) {
+    }
 }
 
