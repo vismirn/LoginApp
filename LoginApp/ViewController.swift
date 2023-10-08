@@ -24,12 +24,15 @@ final class ViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let loginVC = segue.destination as? LoginViewController else { return }
-        loginVC.userHello = usernameTextField.text
+        if usernameTextField.text == "Viktor" {
+            guard let loginVC = segue.destination as? LoginViewController else { return }
+            loginVC.userHello = usernameTextField.text
+        }
     }
-    
     @IBAction func loginButtonPressed()  {
-        
+        if usernameTextField.text == "Viktor" {
+                
+        }
     }
     
     
