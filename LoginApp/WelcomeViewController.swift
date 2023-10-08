@@ -10,7 +10,6 @@ import UIKit
 final class WelcomeViewController: UIViewController {
 
     @IBOutlet weak var userHelloLabel: UILabel!
-    @IBOutlet weak var logoutButton: UIButton!
     
     var userHello: String!
     
@@ -19,9 +18,4 @@ final class WelcomeViewController: UIViewController {
         userHelloLabel.text = "Welcome, \(String(userHello))!"
 
     }
-    
-    @IBAction func logoutButtonAction() {
-        
-    }
-    
 }
