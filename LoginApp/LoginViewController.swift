@@ -7,7 +7,7 @@
 
 import UIKit
 
-class LoginViewController: UIViewController {
+final class LoginViewController: UIViewController {
 
     @IBOutlet weak var userHelloLabel: UILabel!
     @IBOutlet weak var logoutButton: UIButton!
@@ -17,6 +17,7 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func logoutButtonAction() {
+        dismiss(animated: true)
     }
     
 }

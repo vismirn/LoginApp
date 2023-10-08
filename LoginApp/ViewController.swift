@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+final class ViewController: UIViewController {
 
     @IBOutlet weak var usernameTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
@@ -20,13 +20,22 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
     }
 
     @IBAction func loginButtonPressed() {
     }
     @IBAction func forgotNameButtonAction() {
+        let alertController = UIAlertController(title: "Ваше имя Viktor", message: "_", preferredStyle: .alert)
+        let alertAction = UIAlertAction(title: "OK", style: .default)
+        alertController.addAction(alertAction)
+        present(alertController, animated: true, completion: nil)
     }
     @IBAction func forgotPasswordButtonAction() {
+        let alertController = UIAlertController(title: "Ваш пароль Password", message: "_", preferredStyle: .alert)
+        let alertAction = UIAlertAction(title: "OK", style: .default)
+        alertController.addAction(alertAction)
+        present(alertController, animated: true, completion: nil)
     }
     
 }
