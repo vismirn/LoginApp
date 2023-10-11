@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class FirstViewController: UITabBarController {
+final class FirstViewController: UIViewController {
 
     @IBOutlet weak var userHelloLabel: UILabel!
     
