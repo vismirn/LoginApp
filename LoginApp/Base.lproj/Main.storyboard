@@ -167,17 +167,23 @@
                                     <constraint firstAttribute="height" constant="170" id="aij-Oo-dQz"/>
                                 </constraints>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="167" translatesAutoresizingMaskIntoConstraints="NO" id="eHR-fI-Lf8">
-                                <rect key="frame" x="20" y="257" width="41.5" height="208"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="61" translatesAutoresizingMaskIntoConstraints="NO" id="0yO-hd-4Fo">
+                                <rect key="frame" x="16" y="275" width="41.5" height="183"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ADl-zL-rz4">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bFT-D6-P5g">
                                         <rect key="frame" x="0.0" y="0.0" width="41.5" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DJF-k8-rYq">
-                                        <rect key="frame" x="0.0" y="187.5" width="41.5" height="20.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Bv-KM-drx">
+                                        <rect key="frame" x="0.0" y="81.5" width="41.5" height="20"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3AZ-n9-5wc">
+                                        <rect key="frame" x="0.0" y="162.5" width="41.5" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -188,15 +194,21 @@
                         <viewLayoutGuide key="safeArea" id="OTe-qa-o1S"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="OTe-qa-o1S" firstAttribute="bottom" secondItem="0yO-hd-4Fo" secondAttribute="bottom" constant="140" id="20C-iQ-Rkb"/>
                             <constraint firstItem="OTe-qa-o1S" firstAttribute="trailing" secondItem="JNS-dr-ud8" secondAttribute="trailing" constant="80" id="344-3O-lkD"/>
                             <constraint firstItem="JNS-dr-ud8" firstAttribute="top" secondItem="OTe-qa-o1S" secondAttribute="top" constant="20" id="LaP-Sk-8JX"/>
-                            <constraint firstItem="eHR-fI-Lf8" firstAttribute="top" secondItem="JNS-dr-ud8" secondAttribute="bottom" constant="67" id="bXz-Nd-LhI"/>
-                            <constraint firstItem="eHR-fI-Lf8" firstAttribute="leading" secondItem="OTe-qa-o1S" secondAttribute="leading" constant="20" id="exk-bG-vwZ"/>
-                            <constraint firstItem="OTe-qa-o1S" firstAttribute="bottom" secondItem="eHR-fI-Lf8" secondAttribute="bottom" constant="133" id="ise-CS-jwK"/>
+                            <constraint firstItem="0yO-hd-4Fo" firstAttribute="leading" secondItem="OTe-qa-o1S" secondAttribute="leading" constant="16" id="dtE-CU-bhj"/>
+                            <constraint firstItem="0yO-hd-4Fo" firstAttribute="top" secondItem="JNS-dr-ud8" secondAttribute="bottom" constant="85" id="re5-TS-M7T"/>
                             <constraint firstItem="JNS-dr-ud8" firstAttribute="leading" secondItem="OTe-qa-o1S" secondAttribute="leading" constant="20" id="sDb-fS-K3O"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" image="2.circle.fill" catalog="system" id="Ubt-LS-9F5"/>
+                    <connections>
+                        <outlet property="descriptionLabel" destination="8Bv-KM-drx" id="JJ0-i1-h5M"/>
+                        <outlet property="emailLabel" destination="3AZ-n9-5wc" id="ic3-N1-rET"/>
+                        <outlet property="imageView" destination="JNS-dr-ud8" id="fGn-ZZ-dco"/>
+                        <outlet property="nameLabel" destination="bFT-D6-P5g" id="s1e-jd-bUq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aST-bM-Nu3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -205,14 +217,29 @@
         <!--Item-->
         <scene sceneID="xsF-qg-xdb">
             <objects>
-                <viewController id="m9k-er-YXb" sceneMemberID="viewController">
+                <viewController id="m9k-er-YXb" customClass="ThirdViewController" customModule="LoginApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="EPS-ae-JYD">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GNr-Dl-NuR">
+                                <rect key="frame" x="167" y="313.5" width="41.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Rfk-3K-eyv"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="GNr-Dl-NuR" firstAttribute="centerY" secondItem="EPS-ae-JYD" secondAttribute="centerY" id="MLk-gZ-CvK"/>
+                            <constraint firstItem="GNr-Dl-NuR" firstAttribute="centerX" secondItem="EPS-ae-JYD" secondAttribute="centerX" id="gm9-bm-wuG"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" image="3.circle.fill" catalog="system" id="Sgp-hf-8oX"/>
+                    <connections>
+                        <outlet property="biographLabel" destination="GNr-Dl-NuR" id="N15-oi-gdk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sP0-IG-ATi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

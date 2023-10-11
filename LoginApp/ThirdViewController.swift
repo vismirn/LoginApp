@@ -8,5 +8,11 @@
 import UIKit
 
 final class ThirdViewController: UIViewController {
-
+        
+    @IBOutlet weak var biographLabel: UILabel!
+ 
+    override func viewDidLoad() {
+        super.viewDidLoad()
+            
+    }
 }

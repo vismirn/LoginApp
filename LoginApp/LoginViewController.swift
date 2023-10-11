@@ -20,20 +20,20 @@ final class LoginViewController: UIViewController {
         view.endEditing(true)
     }
     
-    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
-        guard usernameTextField.text == user, passwordTextField.text == password else {
-            let alertController = UIAlertController(title: "Неверные данные",
-                                                    message: "User или password",
-                                                    preferredStyle: .alert)
-            let alertAction = UIAlertAction(title: "OK", style: .default)
-            alertController.addAction(alertAction)
-            present(alertController, animated: true, completion: nil)
-            usernameTextField.text = ""
-            passwordTextField.text = ""
-            return false
-        }
-            return true
-    }
+//    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+//        guard usernameTextField.text == user, passwordTextField.text == password else {
+//            let alertController = UIAlertController(title: "Неверные данные",
+//                                                    message: "User или password",
+//                                                    preferredStyle: .alert)
+//            let alertAction = UIAlertAction(title: "OK", style: .default)
+//            alertController.addAction(alertAction)
+//            present(alertController, animated: true, completion: nil)
+//            usernameTextField.text = ""
+//            passwordTextField.text = ""
+//            return false
+//        }
+//            return true
+//    }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let tabBarController = segue.destination as? UITabBarController
