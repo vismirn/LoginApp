@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class FirstViewController: UIViewController {
+final class WelcomeViewController: UIViewController {
 
     @IBOutlet weak var userHelloLabel: UILabel!
     

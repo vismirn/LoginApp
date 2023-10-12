@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class ThirdViewController: UIViewController {
+final class DetailsViewController: UIViewController {
         
     @IBOutlet weak var biographLabel: UILabel!
  

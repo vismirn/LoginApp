@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class SecondViewController: UIViewController {
+final class ProfileViewController: UIViewController {
 
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
