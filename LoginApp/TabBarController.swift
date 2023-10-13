@@ -18,4 +18,23 @@ final class TabBarController: UITabBarController {
         tabBar.standardAppearance = tabBarAppearance
         tabBar.scrollEdgeAppearance = tabBarAppearance
     }
+    
+    
+//    func getUsers() -> User {
+//        var user = User(login: "Viktor1", password: "Pass1", person: Person(name: "Виктор",
+//                                                                            surname: "",
+//                                                                            email: "",
+//                                                                            bio: "Вот тут делаем длииный текст и рассказываем о себе"
+//                                                                           ))
+//        return user
+//    }
+//    
+//    func getPersons() -> Person {
+//        var person = Person(name: "Виктор",
+//                      surname: "",
+//                      email: "",
+//                      bio: "Вот тут делаем длииный текст и рассказываем о себе"
+//                     )
+//        return person
+//    }
 }

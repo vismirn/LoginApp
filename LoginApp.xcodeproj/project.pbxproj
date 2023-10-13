@@ -7,24 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DBA7E9A82AD5774300509F1D /* PersonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA7E9A72AD5774300509F1D /* PersonModel.swift */; };
+		DBA7E9A82AD5774300509F1D /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA7E9A72AD5774300509F1D /* Person.swift */; };
 		DBA7E9AA2AD577F600509F1D /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA7E9A92AD577F600509F1D /* TabBarController.swift */; };
-		DBA7E9B02AD5DA7100509F1D /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA7E9AF2AD5DA7100509F1D /* SecondViewController.swift */; };
-		DBA7E9B22AD5DA9500509F1D /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA7E9B12AD5DA9400509F1D /* ThirdViewController.swift */; };
+		DBA7E9B02AD5DA7100509F1D /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA7E9AF2AD5DA7100509F1D /* ProfileViewController.swift */; };
+		DBA7E9B22AD5DA9500509F1D /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA7E9B12AD5DA9400509F1D /* DetailsViewController.swift */; };
 		DBB888212AD08DCE005F0136 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB888202AD08DCE005F0136 /* AppDelegate.swift */; };
 		DBB888232AD08DCE005F0136 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB888222AD08DCE005F0136 /* SceneDelegate.swift */; };
 		DBB888252AD08DCE005F0136 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB888242AD08DCE005F0136 /* LoginViewController.swift */; };
 		DBB8882A2AD08DD6005F0136 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBB888292AD08DD6005F0136 /* Assets.xcassets */; };
 		DBB8882D2AD08DD6005F0136 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBB8882B2AD08DD6005F0136 /* LaunchScreen.storyboard */; };
-		DBB888352AD14A95005F0136 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB888342AD14A95005F0136 /* FirstViewController.swift */; };
+		DBB888352AD14A95005F0136 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB888342AD14A95005F0136 /* WelcomeViewController.swift */; };
 		DBB888362AD14B82005F0136 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBB888262AD08DCF005F0136 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		DBA7E9A72AD5774300509F1D /* PersonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonModel.swift; sourceTree = "<group>"; };
+		DBA7E9A72AD5774300509F1D /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		DBA7E9A92AD577F600509F1D /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
-		DBA7E9AF2AD5DA7100509F1D /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
-		DBA7E9B12AD5DA9400509F1D /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		DBA7E9AF2AD5DA7100509F1D /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		DBA7E9B12AD5DA9400509F1D /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		DBB8881D2AD08DCE005F0136 /* LoginApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBB888202AD08DCE005F0136 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DBB888222AD08DCE005F0136 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -33,7 +33,7 @@
 		DBB888292AD08DD6005F0136 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DBB8882C2AD08DD6005F0136 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DBB8882E2AD08DD6005F0136 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DBB888342AD14A95005F0136 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		DBB888342AD14A95005F0136 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,20 +66,60 @@
 		DBB8881F2AD08DCE005F0136 /* LoginApp */ = {
 			isa = PBXGroup;
 			children = (
-				DBB888202AD08DCE005F0136 /* AppDelegate.swift */,
-				DBB888222AD08DCE005F0136 /* SceneDelegate.swift */,
-				DBB888242AD08DCE005F0136 /* LoginViewController.swift */,
-				DBA7E9A92AD577F600509F1D /* TabBarController.swift */,
-				DBB888342AD14A95005F0136 /* FirstViewController.swift */,
-				DBA7E9AF2AD5DA7100509F1D /* SecondViewController.swift */,
-				DBA7E9B12AD5DA9400509F1D /* ThirdViewController.swift */,
-				DBA7E9A72AD5774300509F1D /* PersonModel.swift */,
-				DBB888262AD08DCF005F0136 /* Main.storyboard */,
-				DBB888292AD08DD6005F0136 /* Assets.xcassets */,
-				DBB8882B2AD08DD6005F0136 /* LaunchScreen.storyboard */,
+				DBBCADEB2AD71E4D00053AD6 /* SupportingFiles */,
+				DBBCADEC2AD71E8300053AD6 /* ViewControllers */,
+				DBBCADED2AD71E9500053AD6 /* Models */,
+				DBBCADEF2AD71EBC00053AD6 /* Storyboards */,
+				DBBCADF02AD71ED000053AD6 /* Resources */,
 				DBB8882E2AD08DD6005F0136 /* Info.plist */,
 			);
 			path = LoginApp;
+			sourceTree = "<group>";
+		};
+		DBBCADEB2AD71E4D00053AD6 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				DBB888222AD08DCE005F0136 /* SceneDelegate.swift */,
+				DBB888202AD08DCE005F0136 /* AppDelegate.swift */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		DBBCADEC2AD71E8300053AD6 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				DBB888242AD08DCE005F0136 /* LoginViewController.swift */,
+				DBA7E9A92AD577F600509F1D /* TabBarController.swift */,
+				DBB888342AD14A95005F0136 /* WelcomeViewController.swift */,
+				DBA7E9AF2AD5DA7100509F1D /* ProfileViewController.swift */,
+				DBA7E9B12AD5DA9400509F1D /* DetailsViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		DBBCADED2AD71E9500053AD6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DBA7E9A72AD5774300509F1D /* Person.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DBBCADEF2AD71EBC00053AD6 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				DBB888262AD08DCF005F0136 /* Main.storyboard */,
+				DBB8882B2AD08DD6005F0136 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		DBBCADF02AD71ED000053AD6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DBB888292AD08DD6005F0136 /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,12 +193,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DBB888352AD14A95005F0136 /* FirstViewController.swift in Sources */,
-				DBA7E9B22AD5DA9500509F1D /* ThirdViewController.swift in Sources */,
+				DBB888352AD14A95005F0136 /* WelcomeViewController.swift in Sources */,
+				DBA7E9B22AD5DA9500509F1D /* DetailsViewController.swift in Sources */,
 				DBB888252AD08DCE005F0136 /* LoginViewController.swift in Sources */,
-				DBA7E9A82AD5774300509F1D /* PersonModel.swift in Sources */,
+				DBA7E9A82AD5774300509F1D /* Person.swift in Sources */,
 				DBA7E9AA2AD577F600509F1D /* TabBarController.swift in Sources */,
-				DBA7E9B02AD5DA7100509F1D /* SecondViewController.swift in Sources */,
+				DBA7E9B02AD5DA7100509F1D /* ProfileViewController.swift in Sources */,
 				DBB888212AD08DCE005F0136 /* AppDelegate.swift in Sources */,
 				DBB888232AD08DCE005F0136 /* SceneDelegate.swift in Sources */,
 			);

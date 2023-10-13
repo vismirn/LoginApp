@@ -12,8 +12,12 @@ final class LoginViewController: UIViewController {
     @IBOutlet weak var usernameTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     
+    var userPerson = User(login: "", password: "", person: Person(name: "Viktor", surname: "Smirnov", email: "Smirn04@yandex.ru", bio: ""))
+    
     private var user: String? = "Viktor"
     private var password: String? = "Password"
+    
+    
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         super .touchesBegan(touches, with: event)
@@ -36,17 +40,14 @@ final class LoginViewController: UIViewController {
 //    }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let tabBarController = segue.destination as? UITabBarController
+        let tabBarController = segue.destination as? TabBarController
         tabBarController?.viewControllers?.forEach { viewController in
-            if let firstVC = viewController as? FirstViewController {
-                firstVC.userHello = usernameTextField.text
-                firstVC.view.backgroundColor = .systemOrange
-            } else if let secondVC = viewController as? SecondViewController {
-                secondVC.view.backgroundColor = .systemMint
-            } else if let navigationVC = viewController as? UINavigationController {
-                let thirdVC = navigationVC.topViewController as? ThirdViewController
-                thirdVC?.title = "Third VC"
-                thirdVC?.view.backgroundColor = .systemCyan
+            if let welcomeVC = viewController as? WelcomeViewController {
+                welcomeVC.userHello = user
+            } else if let profileVC = viewController as? ProfileViewController {
+                profileVC.title = "Profile"
+            } else if let detailsVC = viewController as? DetailsViewController {
+                detailsVC.title = "Details"
             }
         }
     }
